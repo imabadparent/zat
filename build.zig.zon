@@ -1,0 +1,21 @@
+.{
+    .name = "zat",
+    .version = "0.1.0",
+
+    //.minimum_zig_version = "0.12.0",
+
+    .dependencies = .{
+        .clap = .{
+            .url = "https://github.com/Hejsil/zig-clap/archive/refs/heads/master.tar.gz",
+            .hash = "1220b641ac5ed4187f293906201ee07f98423c942bf82e28c7c75a22d700b494c177",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "LICENSE",
+        "README.md",
+    },
+}
