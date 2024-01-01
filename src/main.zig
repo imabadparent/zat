@@ -45,9 +45,9 @@ pub fn main() !void {
     const alloc = gpa.allocator();
 
     const params = comptime clap.parseParamsComptime(
-        \\-h, --help    Print usage information
-        \\-u            Write bytes from the input file to the standard output without delay as each is read.
-        \\<file>...     A pathname of an input file. If no file is given, stdin will be used. if `-` is used, stdin will be used at that point.
+        \\-h, --help    Print usage information and exit
+        \\-u            Ignored, here for POSIX compliance. Unbuffered output is the default behavior
+        \\<file>...     A pathname of an input file. If no file is given, stdin will be used. If `-` is used, stdin will be used at that point
     );
     const parsers = comptime .{
         .file = clap.parsers.string,
