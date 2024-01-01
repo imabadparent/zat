@@ -7,7 +7,7 @@ This project aims to be fully compliant with the POSIX standard for the cat util
 I make no guarantee that these will be added, but they are things I would like to implement
 when given the time.
 
-- Syntax highlighting a la (bat)[https://github.com/sharkdp/bat]
+- Syntax highlighting a la [bat](https://github.com/sharkdp/bat)
 - Integration with git
 
 ## References
