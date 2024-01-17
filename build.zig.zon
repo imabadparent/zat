@@ -7,7 +7,7 @@
     .dependencies = .{
         .clap = .{
             .url = "https://github.com/Hejsil/zig-clap/archive/refs/heads/master.tar.gz",
-            .hash = "1220b641ac5ed4187f293906201ee07f98423c942bf82e28c7c75a22d700b494c177",
+            .hash = "12209e829da9d7d0bc089e4e0cbc07bb882f6192cd583277277da34df53cd05b8f2a",
         },
     },
 
