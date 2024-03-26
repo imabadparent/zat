@@ -22,11 +22,11 @@ fn readFiles(alloc: Allocator, filenames: []const []const u8) !void {
     }
 
     for (filenames) |filename| {
-        std.debug.print("filename -> {s}\n", .{filename});
         if (std.mem.eql(u8, filename, "-")) {
             try copyStdInToStdOut();
             continue;
         }
+        std.debug.print("{s}:\n", .{filename});
         var path_buf: [std.fs.MAX_PATH_BYTES]u8 = .{0} ** std.fs.MAX_PATH_BYTES;
         const path = try std.fs.realpath(filename, &path_buf);
         const file = try std.fs.openFileAbsolute(path, .{ .mode = .read_only });
